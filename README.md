@@ -80,7 +80,7 @@ The objective of this project is to design a **district-level anomaly detection 
 
 ## Dashboard Preview 
 
-![Dashboard Overview](dashboard/Dashboard_page-0001.jpg)
+![Dashboard Overview](Dashboard/Dashboard_page-0001.jpg)
 
 
 ## Exploratory Data Analysis (EDA) Summary
