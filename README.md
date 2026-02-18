@@ -78,7 +78,7 @@ The objective of this project is to design a **district-level anomaly detection 
 
 ---
 
-## Dashboard Preview
+## Dashboard Preview 
 
 ![Dashboard Overview](dashboard/Dashboard_page-0001.jpg)
 
