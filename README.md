@@ -46,20 +46,20 @@ The objective of this project is to design a **district-level anomaly detection 
 | District                      | Region name                          | Verified names                               |
 | Labeled_Dwelling              | Type of residence                    | Labelled format                              |
 | Num_Occupants                 | Number of residents                  | Checked for missing values                   |
-| House_Area (sqft)             | Area of the house                    | Cleaned missing / extreme values             |
-| Appliance_Score               | Intensity of appliance usage         | Categorized                                  |
+| House_Area (sqft)             | Area of the house                    | Formatting Data             |
+| Appliance_Score               | Intensity of appliance usage         | Formatted                                  |
 | Appliance_Score_Grouped       | Grouped appliance intensity          | Created for segmentation                     |
 | Connected_Load (kW)           | Maximum electrical load              | Checked consistency                          |
 | Load_category                 | Categorized load                     | Derived from Connected_Load                  |
 | Temperature_C                 | Recorded temperature                 | Verified numeric values                      |
 | Temperature_category          | Categorized temp (<25, 25-30, >30)   | Derived from Temperature_C                   |
 | Humidity (%)                  | Humidity level                       | Verified values                              |
-| Cleaned_Expected_Energy (kWh) | Estimated energy                     | Missing values handled                       |
-| Cleaned_Actual_Energy (kWh)   | Actual energy consumed               | Missing values handled                       |
+| Cleaned_Expected_Energy (kWh) | Estimated energy                     | Missing values handled                      |
+| Cleaned_Actual_Energy (kWh)   | Actual energy consumed               | Missing values handled with 0                      |
 | Usage_Deviation (%)           | Difference between actual & expected | Calculated, % format                         |
 | Cluster_Avg_Energy (kWh)      | Cluster average energy               | Calculated per cluster                       |
-| Abnormal_Usage                | Binary flag (1=abnormal,0=normal)    | Derived from deviation threshold             |
-| Pattern_Usage                 | Usage behavior pattern               | Classified                                   |
+| Abnormal_Usage                | Binary flag (1=abnormal,0=normal)    | Taken from Raw dataset             |
+| Pattern_Usage                 | Usage behavior pattern               | Tried to mimic Abnormal_Usage                                  |
 
 **Data Size:** 10,800 records across multiple districts.
 **Limitations:** Single month (Jan 2023), Kerala only, some initial missing values.
